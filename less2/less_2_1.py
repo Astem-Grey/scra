@@ -97,7 +97,7 @@ while True:
         result.append(info_prof_dict)
     try:
         further = dom.find(sit.get('further')[0], sit.get('further')[1])['href']
-        url = sit.get('url') + sit.get('further')
+        url = sit.get('url') + further
         responce = requests.get(url, headers=header)
     except TypeError:
         break
