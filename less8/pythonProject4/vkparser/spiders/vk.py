@@ -12,8 +12,7 @@ class VkSpider(scrapy.Spider):
     name = 'vk'
     allowed_domains = ['vk.com']
     start_urls = ['https://vk.com/']
-    target_urls = ['/s.lyubakov2']
-    # target_urls = ['/zxcnbzxn', '/id36497884', '/reginavasilchuk']
+    target_urls = ['/zxcnbzxn', '/id36497884', '/reginavasilchuk']
     user_fans = []
 
     def start_requests(self):
@@ -56,8 +55,8 @@ class VkSpider(scrapy.Spider):
                                       'ip_h': ip_h,
                                       'lg_domain_h': lg_domain_h,
                                       'ul': '',
-                                      'email': '+79858789339',
-                                      'pass': 'Warnen22'
+                                      'email': 'ЛОГИН',
+                                      'pass': 'ПАРОЛЬ'
                                   },
                                   callback=self.auth_step_two)
 
